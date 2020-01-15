@@ -15,8 +15,21 @@ console.log("Min", Math.min(...array)) //minimum deger
 
 // ilk basta if(odd % 2 !== 0) yazdigimda bana kacinci sayi oldugunu gösterdi, bi 10 dk düsündüm :) :) :)
 
+
+//iki farklicözüm
+
 for (let odd = 0; odd < array.length; odd++) {
     if(array[odd] % 2 !== 0) {
       console.log("Odd Numbers", array[odd]) //tek sayilar
     }
 }
+
+let counter = 0
+let tt = []
+for (let i=0; i < array.length; i++){
+  if (array[i] & 1) {
+    tt[counter++] = array[i];
+  }
+}
+
+console.log(tt)
