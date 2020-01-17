@@ -1,5 +1,3 @@
-
-
 let array = [1, 8, 20, 33, 58, 67, 72];
 let total = 0;
 
@@ -33,4 +31,3 @@ for (let i=0; i < array.length; i++){
 }
 
 console.log(tt)
-
