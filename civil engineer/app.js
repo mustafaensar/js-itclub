@@ -1,3 +1,12 @@
+let dikdortgenOlanlar = [7,5,2,8,10,20,7,21,12,10, 6];
+
+let daireOlanlar = [6,23,19,0,200,156];
+
+let kupHacimleri = [2,6,1,4,13, -1]
+
+
+
+
 let DaireAlani = DaireAlan(5);
 
 console.log ("Daire Alani", DaireAlani); 
