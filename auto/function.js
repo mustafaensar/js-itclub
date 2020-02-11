@@ -38,11 +38,13 @@ function filterLessThanFive(auto){
   return findLessThanFive;
 }
 
+
 function changedNameOfCars(auto){
   const findStartWithF = auto.filter(x => x.startsWith("f"));
   const addEveryOneX = (findStartWithF.map(x => x.slice(0, -1).concat("x")))
   return addEveryOneX;
 }
+
 
 function myFavouriteCars(auto){
   const includingA = auto.filter(x => (3 < x.length < 6) && x.includes("a"));
@@ -50,14 +52,18 @@ function myFavouriteCars(auto){
   return favori;
 }
 
+
 function filterIncludingCharOA(auto){
   const findIncludingCharOA = auto.filter(x => x.includes("o") && x.includes("a"));
-  const length = findIncludingCharOA.map(x => x.length)
-  return findIncludingCharOA + "<br><strong>karakter sayilari: </strong> " +length;
+  const length = findIncludingCharOA.map(x => x.length);
+  const total = length.reduce((a, b) => a + b, 0);
+  return findIncludingCharOA + "<br><strong>karakter sayilari: </strong> " + length + "<br><strong>Toplami: </strong> " + total;
 }
+
 
 function filterIncludingCharOI(auto){
   const findIncludingCharOI = auto.filter(x => x.includes("o") || x.includes("i"));
-  const length = findIncludingCharOI.map(x => x.length)
-  return findIncludingCharOI + "<br><strong>karakter sayilari: </strong> " +length;
+  const length = findIncludingCharOI.map(x => x.length);
+  const total = length.reduce((a, b) => a + b, 0);
+  return findIncludingCharOI + "<br><strong>karakter sayilari: </strong> " + length + "<br><strong>Toplami: </strong> " + total;
 }
