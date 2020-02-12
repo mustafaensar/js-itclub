@@ -4,22 +4,14 @@ Online sistemin ise arama ve filtreleme özellikleri daha olusturulmadigi icin S
 Sizden istegimiz online sistemin ihtiyaci olan asagidaki fonksiyonlari acilen yazmanizdir.
 
 0) Araba karakteri tasimayan arabalari;) filtreleyiniz.
-1) Icinde "o"
-harfi gecen arabalari ve bu arabalarin sayisini bulun.
-2) Icinde iki defa "o"
-harfi gecen arabalarin sayisini bulun.
+1) Icinde "o" harfi gecen arabalari ve bu arabalarin sayisini bulun.
+2) Icinde iki defa "o" harfi gecen arabalarin sayisini bulun.
 3) Araba isim uzunlugu 5 'den kücük olan arabalari listeleyin.
-4) Ilk harfi "f"
-olan arabalarin son harfini x olarak degistirin.
-5) Uzunlugu 3 ile 6 arasinda olan arabalardan isminin icinde "a"
-harfi olanlari, isimlerinin önüne "my favorite"
-gelecek sekilde degistirin ve lsiteleyin.
-6) Ismi icinde "o"
-ve "a"
-gecen arabalari toplam karakter sayisini bulunuz.
-7) Ismi icinde "o"
-veya "i"
-gecen arabalari toplam karakter sayisini bulunuz.
+4) Ilk harfi "f" olan arabalarin son harfini x olarak degistirin.
+5) Uzunlugu 3 ile 6 arasinda olan arabalardan isminin icinde "a" harfi olanlari,
+isimlerinin önüne "my favorite" gelecek sekilde degistirin ve lsiteleyin.
+6) Ismi icinde "o" ve "a" gecen arabalari toplam karakter sayisini bulunuz.
+7) Ismi icinde "o" veya "i" gecen arabalari toplam karakter sayisini bulunuz.
 8) find() methodu ile filter() method arasindaki farklari yazin. */
 
 let cars = ["audi", "bmw", "ford", "opel", "fiat", "honda", "toyota", "renault", 
