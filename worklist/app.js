@@ -1,19 +1,16 @@
-let islerim = ["Yataklari düzelt", "(x) Evi süpür", "(x) Camasirlari yika", "Yemegi yap", "(x) Alisverise git", "Cocugu okuldan al"];
+let islerim = ["(x) Yataklari düzelt", "(x) Evi süpür", "(x) Camasirlari yika", "(x) Yemegi yap", "(x) Alisverise git", "Cocugu okuldan al"];
 
-let bitirilmis = [];
-let bitirilmemis = [];
+let bitirilmis = islerim.filter(WorksSituation.finished);
+
+let bitirilmemis = islerim.filter(WorksSituation.unfinished);
+
+let check = WorksSituation.check(islerim);
 
 
-bitirilmis.push(finished(islerim));
+output(("<strong>Bitirilmis Isleriniz</strong><br>" + bitirilmis)
++("<br></br>")
++("<strong>Bitirilmemis Isleriniz</strong><br>" + bitirilmemis)
++("<br></br>")
++("<strong>Islerim Bitti mi?</strong><br>" + check)
+);
 
-bitirilmemis.push(unfinished(islerim));
-
-console.log("Bitirilmis Isleriniz", bitirilmis);
-
-console.log("Bitirilmemis Isleriniz", bitirilmemis);
-
-if (check(islerim)){
-    console.log("BITTI")
-}else {
-    console.log("BITMEDI")
-}
