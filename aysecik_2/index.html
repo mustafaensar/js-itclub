@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Calculator_icon.svg/512px-Calculator_icon.svg.png>
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+            <header>
+                <h1>Calculator</h1>
+            </header>
+
+            <section id="info">
+                <p>Please enter the number as text</p>
+            </section>
+
+            <section class="dataInput">
+                <input type="text" value="" id="number"><br><br>
+                <div class="buttons">
+                    <input type="button" value="Add" class="button" id="add">
+                    <input type="button" value="Calculate" class="button" id="calculate">
+                    <input type="button" onclick="location.reload()" value="Refresh" class="button">
+                </div>
+            </section>
+
+            <section class="dataOutput">
+                <p>
+                    Numbers: <span id="numbers"></span><br>
+                    How Many Numbers: <span id="howManyNumbers"></span><br>
+                    Sum of Numbers: <span id="resultOfAddition"></span><br>
+                    Multiplication of Numbers: <span id="resultOfMultiplication"></span><br>
+                    Average of Numbers: <span id="resultOfAverage"></span><br>
+                    Max of Numbers: <span id="maxNumber"></span><br>
+                    Min of Numbers: <span id="minNumber"></span><br>
+                </p>
+            </section>
+
+            <div>
+                <p id="error"></p>
+            </div>
+        </div>
+    </div>
+    <script src="./function.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

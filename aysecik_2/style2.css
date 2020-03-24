@@ -1,0 +1,188 @@
+body {
+    background-image: url('images/bg.png');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    width: 300px;
+    height: 510px;
+    position: absolute;
+    top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.5);
+}
+
+.floor_2 {
+    width: 300px;
+    height: 320px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    position: absolute;
+    top: 150px;
+}
+
+.info {
+    width: 250px;
+    height: 150px;
+    background-color: whitesmoke;
+    margin: 0px auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    top: 75px;
+    left: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+    width: 250px;
+    height: 175px;
+    background-color: whitesmoke;
+    margin: 0px auto;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    top: 275px;
+    left: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.nav {
+    width: 300px;
+    height: 40px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: whitesmoke;
+    background-size: cover;
+    position: absolute;
+    top: 470px;
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#back {
+    float: left;
+    margin-left: 15px;
+}
+
+#options {
+    float: right;
+    margin-right: 15px;
+}
+
+#image {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50px;
+    left: 120px;
+}
+
+#image img[src*="images/man.png"] {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+#image img[src*="camera.png"] {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    left: 35px;
+    top: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#image img[src*="images/camera.png"]:hover {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+#info_text {
+    text-align: center;
+}
+
+#name {
+    font-family: cursive;
+    font-weight: bold;
+    color: rgb(105, 105, 105);
+}
+
+#job {
+    font-family: agency fb;
+    font-weight: bold;
+    color: rgb(105, 105, 105);
+}
+
+#info_icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#info_icons img {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+#box_title {
+    font-family: verdana;
+    font-weight: bold;
+    font-size: small;
+    color: rgba(105, 105, 105, 0.6);
+    margin-top: 95px;
+}
+
+#menu_1, #menu_2, #menu_3, #menu_4 {
+    width: 230px;
+    height: 30px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+}
+
+.menu a {
+    height: 28px;
+    font-family: arial;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+    color: rgba(65, 65, 65, 0.9);
+}
+
+.nav img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+}
