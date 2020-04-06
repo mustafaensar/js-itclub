@@ -1,0 +1,71 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Vokabellernen</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="head">
+                <h6>VOKABELLERNEN</h6><br>
+            </div>
+        </header>
+
+        <div class="clean"></div>
+
+        <header>
+            <div class="text">
+                <p>Find the Deutsch meaning of the word :)</p>
+            </div>
+        </header>
+
+        <div class="clean"></div>
+
+        <header>
+            <div id="question"></div>
+        </header>
+
+        <div class="clean"></div>
+
+        <section> <!-- Choices will be rendered here -->
+            <div class="buttons">
+                <button onclick="manager.getMyAnswer(0)" class="choices" id="ChoiceButton0"></button>
+                <button onclick="manager.getMyAnswer(1)" class="choices" id="ChoiceButton1"></button>
+                <button onclick="manager.getMyAnswer(2)" class="choices" id="ChoiceButton2"></button>
+                <button onclick="manager.getMyAnswer(3)" class="choices" id="ChoiceButton3"></button>
+            </div>
+        </section>
+
+        <div class="clean"></div>
+
+        <section>
+            <div class="buttons">
+                <button id="nextQuestion">Next Question</button>
+            </div>
+        </section>
+
+        <section> <!-- Results will be rendered here -->
+            <div class="info">
+                <div id="point" type="number">POINT</div>
+            </div>
+        </section>
+
+        <section>
+            <div class="info">
+                <div id="details"></div>
+            </div>
+        </section>
+
+    </div>
+    <script src="./function.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

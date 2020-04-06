@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhasebeci</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <div>
+            <input type="text" placeholder="İsim" id="name">
+        </div>
+        <div>
+            <input type="text" placeholder="Soyisim" id="surname">
+        </div>
+        <div>
+            <form>
+                <label for="kantonNames">Kanton:</label>
+                <select name="kantonNames" id="kantonNames">
+                    <option value="AG">VD</option>
+                    <option value="AI">BE</option>
+                    <option value="AR">LU</option>
+                    <option value="BE">UR</option>
+                    <option value="BL">UR</option>
+                    <option value="BS">UR</option>
+                    <option value="FR">UR</option>
+                    <option value="GE">UR</option>
+                    <option value="GL">UR</option>
+                    <option value="GR">UR</option>
+                    <option value="JU">UR</option>
+                    <option value="LU">UR</option>
+                    <option value="NE">UR</option>
+                    <option value="NW">UR</option>
+                    <option value="OW">UR</option>
+                    <option value="SH">UR</option>
+                    <option value="SG">UR</option>
+                    <option value="SO">UR</option>
+                    <option value="SZ">UR</option>
+                    <option value="TG">UR</option>
+                    <option value="TI">UR</option>
+                    <option value="UR">UR</option>
+                    <option value="VD">UR</option>
+                    <option value="VS">UR</option>
+                    <option value="ZH">UR</option>
+                    <option value="ZG">UR</option>
+                </select>
+                <input type="button" value="Kaydet" id="saveButton">
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <table id="myTable">
+                <tr class="header">
+                    <th>
+                        İsim
+                    </th>
+                    <th>
+                        Soyisim
+                    </th>
+                    <th>
+                        Kanton
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

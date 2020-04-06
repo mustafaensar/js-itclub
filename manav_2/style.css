@@ -1,0 +1,214 @@
+body {
+    background-color: rgba(47, 79, 79, 0.5);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(white, #D3D8E8);
+}
+
+.logo {
+    margin: 2%;
+    float: left;
+    background-color: rgb(47, 79, 79);
+    color: white;
+    font-family: Verdana;
+    text-align: center;
+    cursor: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo img {
+    width: 30px;
+}
+
+nav {
+    margin: 2%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav p {
+    float: left;
+    margin-right: 1%;
+}
+
+nav p a {
+    text-decoration: none;
+    font-family: Verdana;
+    font-weight: bolder;
+    color: darkslategray;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav p a:hover {
+    background-color: rgba(47, 79, 79, 0.404);
+    border-radius: 10px;
+}
+
+.clean {
+    clear: both;
+}
+
+.pageName {
+    float: center;
+    background-color: rgb(47, 79, 79);
+    color: white;
+    font-family: Verdana;
+    text-align: center;
+}
+
+section.products {
+    background-color: rgb(47, 79, 79);
+    color: white;
+    font-family: Verdana;
+    justify-content: space-between;
+}
+
+.leftPart {
+    width: 55%;
+    position: relative;
+    float: left;
+    padding-right: 2%;
+    padding-left: 2%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.fruits {
+    width: 30%;
+    position: relative;
+    padding: 2%;
+    margin: 3%;
+    border: 5px solid darkslategray;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: linear-gradient(white, #D3D8E8);
+}
+
+.fruits img {
+    width: 30%;
+}
+
+.fruits p {
+    color: darkslategray;
+}
+
+.fruits .inputFruits {
+    width: 40%;
+    margin-bottom: 1%;
+    border: 5px solid darkslategray;
+    background: linear-gradient(white, #D3D8E8);
+    text-align: center;
+    font-family: verdana;
+    font-weight: bolder;
+    color: darkslategray;
+}
+
+.fruits .buttonFruits {
+    color: #fff;
+    font-family: verdana;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: rgba(47, 79, 79, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+}
+
+.fruits .buttonFruits:hover {
+    background: #434343;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+
+.rightPart {
+    width: 30%;
+    position: relative;
+    float: right;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.rightPart h3 {
+    position: relative;
+    float: center;
+    text-align: center;
+    background: darkslategray;
+}
+
+.rightPart img {
+    width: 25px;
+    position: relative;
+    padding: 2%;
+}
+
+.rightPart p {
+    text-align: center;
+    font-size: 18px;
+    background: darkslategray;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the list items */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: darkslategray;
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:hover {
+    background: rgba(47, 79, 79, 0.5);
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
