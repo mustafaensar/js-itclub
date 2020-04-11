@@ -10,7 +10,13 @@
  * 
  * 
  * ANALIZ KISMI
- * HTML icinde sag tarafa bir form eklenecek // yapildi
- * HTML icinde sol tarafa bir tablo eklenecek // yapildi
- * Data icin bir model.js olusturulacak ve bilgi akisi buradan saglanacak // yapildi
+ * HTML icinde form eklenecek // yapildi
+ * HTML icinde bir tablo eklenecek // yapildi
+ * DOM üzerindeki formdan gelecek bilgiler butona basilarak bir data ya aktarilacak. // yapildi
+ * Gelen bilgiler tabloda yazdirilacak // yapildi
+ * Tablo basliklarina tiklanildigi zaman listeleme yapilacak // yapildi
+ * Tablo icinde arama yapilabilecek // yapildi
  */
+
+
+new Manager;

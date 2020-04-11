@@ -1,0 +1,99 @@
+/* Responsive Design olmasi adina flexdirection: column
+seklinde ayarladim. Siz yanyana olsun istemistiniz ama
+telefon dizayninda da guzel bir gorunum icin bunu sectim*/
+
+
+
+body {
+    background-color: rgba(70, 131, 180, 0.7);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    margin: 0 auto;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    border: rgba(70, 131, 180) solid 3px;
+    border-radius: 10px;
+}
+
+#fname, #surname, #kanton, #saveButton, .search {
+    border: rgba(70, 131, 180) solid 3px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: cursive;
+    margin: 1%;
+}
+
+#kantonHeader {
+    text-align: center;
+    font-family: cursive;
+    margin: 1%;
+}
+
+.tableContainer {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: rgba(70, 131, 180) solid 3px;
+    border-radius: 10px;
+}
+
+.tableContainer h4 {
+    font-family: cursive;
+}
+
+.myTable {
+    text-align: center;
+    font-weight: bolder;
+    font-family: cursive;
+}
+
+.table {
+    border-spacing: 5px;
+    border-collapse: separate;
+    text-align: center;
+    font-weight: bolder;
+    font-family: cursive;
+}
+
+.table th {
+    border: rgba(0, 0, 0, 0.7) solid 3px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.table td {
+    width: 100%;
+    padding: 5%;
+}

@@ -1,71 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhasebeci</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    <section>
-        <div>
-            <input type="text" placeholder="İsim" id="name">
-        </div>
-        <div>
-            <input type="text" placeholder="Soyisim" id="surname">
-        </div>
-        <div>
-            <form>
-                <label for="kantonNames">Kanton:</label>
-                <select name="kantonNames" id="kantonNames">
-                    <option value="AG">VD</option>
-                    <option value="AI">BE</option>
-                    <option value="AR">LU</option>
-                    <option value="BE">UR</option>
-                    <option value="BL">UR</option>
-                    <option value="BS">UR</option>
-                    <option value="FR">UR</option>
-                    <option value="GE">UR</option>
-                    <option value="GL">UR</option>
-                    <option value="GR">UR</option>
-                    <option value="JU">UR</option>
-                    <option value="LU">UR</option>
-                    <option value="NE">UR</option>
-                    <option value="NW">UR</option>
-                    <option value="OW">UR</option>
-                    <option value="SH">UR</option>
-                    <option value="SG">UR</option>
-                    <option value="SO">UR</option>
-                    <option value="SZ">UR</option>
-                    <option value="TG">UR</option>
-                    <option value="TI">UR</option>
-                    <option value="UR">UR</option>
-                    <option value="VD">UR</option>
-                    <option value="VS">UR</option>
-                    <option value="ZH">UR</option>
-                    <option value="ZG">UR</option>
-                </select>
-                <input type="button" value="Kaydet" id="saveButton">
-            </form>
-        </div>
-    </section>
 
-    <section>
-        <div>
-            <table id="myTable">
-                <tr class="header">
-                    <th>
-                        İsim
-                    </th>
-                    <th>
-                        Soyisim
-                    </th>
-                    <th>
-                        Kanton
-                    </th>
-                </tr>
-            </table>
-        </div>
-    </section>
+<body>
+    <div class="container">
+        <section>
+            <div class="formContainer">
+                <form name="informations" class="form">
+                    <div>
+                        <input type="text" placeholder="İsim" name="fname" id="fname">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Soyisim" name="surname" id="surname">
+                    </div>
+                    <div>
+                        <label for="kanton" id="kantonHeader">Kanton:</label>
+                        <select name="kanton" id="kanton">
+                            <option value="AG">AG</option>
+                            <option value="AI">AI</option>
+                            <option value="AR">AR</option>
+                            <option value="BE">BE</option>
+                            <option value="BL">BL</option>
+                            <option value="BS">BS</option>
+                            <option value="FR">FR</option>
+                            <option value="GE">GE</option>
+                            <option value="GL">GL</option>
+                            <option value="GR">GR</option>
+                            <option value="JU">JU</option>
+                            <option value="LU">LU</option>
+                            <option value="NE">NE</option>
+                            <option value="NW">NW</option>
+                            <option value="OW">OW</option>
+                            <option value="SH">SH</option>
+                            <option value="SG">SG</option>
+                            <option value="SO">SO</option>
+                            <option value="SZ">SZ</option>
+                            <option value="TG">TG</option>
+                            <option value="TI">TI</option>
+                            <option value="UR">UR</option>
+                            <option value="VD">VD</option>
+                            <option value="VS">VS</option>
+                            <option value="ZH">ZH</option>
+                            <option value="ZG">ZG</option>
+                        </select>
+                    </div>
+                    <input type="button" value="Kaydet" id="saveButton">
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div class="tableContainer">
+                <h4>-- Kisi Bilgileri --</h4>
+                <input type="search" placeholder="Search" class="search">
+                <div class="myTable"></div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="./model.js"></script>
+    <script src="./app.js"></script>
 </body>
+
 </html>
