@@ -1,0 +1,29 @@
+body {
+    background: linear-gradient(white, rgb(173, 182, 212));
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main, .quizes {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 10%;
+}
+
+.newUser, .users {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 20%;
+}
+
+#newUserInput, #newUserButton {
+    text-align: center;
+}
