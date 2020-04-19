@@ -1,7 +1,9 @@
 class newUserInput {
     constructor() {
         this.sectionOfInput = document.querySelector('.newUser');
+        this.audio = document.querySelector('.audio');
         this.setElementsOfInput();
+        this.setMusicOfMainPage();
     }
 
     setElementsOfInput() {
@@ -9,47 +11,38 @@ class newUserInput {
             `<input type="text" placeholder="Write Your Name" id="newUserInput"><input type="button" value="Submit" id="newUserButton">`;
         this.sectionOfInput.innerHTML = elementsOfInput;
     }
+
+    setMusicOfMainPage() {
+        const audio = `<audio src="./musics/littleidea.mp3" autoplay></audio>`
+        this.audio.innerHTML = audio;
+    }
 }
 
 class Informations {
     constructor() {
         this.newUserName = document.getElementById('newUserInput');
         this.submitButton = document.querySelector('#newUserButton');
+        this.sectionOfRender = document.querySelector('.users');
         this.setListeners();
     }
 
     setListeners() {
-        const user = this.newUserName.value;
-        if (user !== '') {
-            this.submitButton.addEventListener('click', new Users(user));   
-        }
+        this.submitButton.addEventListener('click', this.setUsers.bind(this))
     }
 
-}
+    setUsers() {
+        const name = this.newUserName.value;
 
-class Users {
-    constructor(name) {
-        this.sectionOfRender = document.querySelector('.users');
-        this.button = document.querySelector('#newUserButton');
-        this.setUsers(name);
-        this.render()
-    }
-
-    setUsers(name) {
-        const elementsOfInput =
-            `<input type="button" value="${name}" id="newUser">`;
+        const elementsOfInput = `<input type="button" value="${name}" id="newUser">`;
+            
         this.sectionOfRender.innerHTML += elementsOfInput;
     }
 
-    render() {
-        const name = new UsersData()
-        this.button.addEventListener('click', this.setUsers(name));
-    }
-
 }
 
-class Point {
+class GetQuiz {
     constructor() {
-        this.nameOfPerson = document.querySelector();
     }
+
+
 }

@@ -23,5 +23,3 @@
  new UsersData;
  new newUserInput;
  new Informations;
- new Users;
- 
