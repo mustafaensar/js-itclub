@@ -23,3 +23,4 @@
  new UsersData;
  new newUserInput;
  new Informations;
+ new Manager;

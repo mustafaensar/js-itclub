@@ -14,7 +14,7 @@ class newUserInput {
 
     setMusicOfMainPage() {
         const audio = `<audio src="./musics/littleidea.mp3" autoplay></audio>`
-        this.audio.innerHTML = audio;
+        //this.audio.innerHTML = audio;     BURASI DEGISECEK, AUDIO ICIN API KULLANILACAK
     }
 }
 
@@ -27,22 +27,38 @@ class Informations {
     }
 
     setListeners() {
-        this.submitButton.addEventListener('click', this.setUsers.bind(this))
+        this.submitButton.addEventListener('click', this.setUsers.bind(this));
     }
 
     setUsers() {
         const name = this.newUserName.value;
 
-        const elementsOfInput = `<input type="button" value="${name}" id="newUser">`;
-            
-        this.sectionOfRender.innerHTML += elementsOfInput;
-    }
+        const elementsOfInput = `<input type="button" value="${name}" class="newUsers">`;
 
+        if (name !== ''){
+            this.sectionOfRender.innerHTML += elementsOfInput;
+        }
+
+        new GetQuiz;
+    }
 }
 
 class GetQuiz {
-    constructor() {
+    constructor(){
+        this.newUsers = document.querySelector('.newUsers');
+        this.quizSection = document.querySelector('.quiz');
+        this.setListeners();
     }
 
+    setListeners(){
+        this.newUsers.addEventListener('click', this.getQuiz.bind(this));
+    }
 
+    getQuiz() {
+        const name = document.querySelector('.newUsers').value;
+        document.querySelector('.main').style.display = 'none';
+        new Manager(name);
+        const button = `<input type="button" value="LET'S GO TO QUIZ">`
+        this.quizSection.innerHTML += button;
+    }
 }

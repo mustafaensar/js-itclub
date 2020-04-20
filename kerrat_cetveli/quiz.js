@@ -39,6 +39,9 @@ class Manager {
         this.person = new Person(name);
         this.firstNumber = this.random();
         this.secondNumber = this.random();
+        this.quizSection = document.querySelector('.quiz');
+        this.check();
+        this.start();
     }
 
     random() {
@@ -46,7 +49,11 @@ class Manager {
     }
 
     start() {
-        // inputlari doldur
+        document.querySelector('.newUsers').addEventListener('click', this.letsGo.bind(this))
+    }
+
+    letsGo(){
+        this.quizSection.innerHTML += button;
     }
 
     check() {
@@ -55,6 +62,3 @@ class Manager {
         this.person.printResults();
     }
 }
-
-const manager = new Manager('ahmet');
-manager.check();
