@@ -42,8 +42,13 @@ class Informations {
             src: ["./musics/littleidea.mp3"],
             autoplay: true,
             loop: true,
-            volume: 0.002
-        })
+            volume: 0.002,
+            onplayerror: function() {
+                sound.once('unlock', function() {
+                  sound.play();
+            })}
+        });
+        sound.play();    
     }
 }
 
