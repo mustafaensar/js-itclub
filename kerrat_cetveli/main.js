@@ -1,9 +1,7 @@
 class newUserInput {
     constructor() {
         this.sectionOfInput = document.querySelector('.newUser');
-        this.audio = document.querySelector('.audio');
-        this.setElementsOfInput();
-        this.setMusicOfMainPage(); 
+        this.setElementsOfInput(); 
     }      
 
     setElementsOfInput() {
@@ -12,10 +10,6 @@ class newUserInput {
         this.sectionOfInput.innerHTML = elementsOfInput;
     }
 
-    setMusicOfMainPage() {
-        const audio = `<audio src="./musics/littleidea.mp3" autoplay></audio>`
-        //this.audio.innerHTML = audio;     BURASI DEGISECEK, AUDIO ICIN API KULLANILACAK
-    }
 }
 
 class Informations {
@@ -24,6 +18,7 @@ class Informations {
         this.submitButton = document.querySelector('#newUserButton');
         this.sectionOfRender = document.querySelector('.users');
         this.setListeners();
+        this.setMusic();
     }
 
     setListeners() {
@@ -40,6 +35,15 @@ class Informations {
         }
 
         new GetQuiz;
+    }
+
+    setMusic() {
+        const sound = new Howl({
+            src: ["./musics/littleidea.mp3"],
+            autoplay: true,
+            loop: true,
+            volume: 0.002
+        })
     }
 }
 
@@ -64,6 +68,7 @@ class GetQuiz {
     }
 
     fullscreen(){
+        if(document.querySelector("#getQuiz"))
         document.querySelector("#getQuiz").addEventListener('click', this.openFullscreen.bind(this));
     }
 
