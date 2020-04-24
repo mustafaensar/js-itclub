@@ -36,6 +36,7 @@ class Person {
 
 class Manager {
     constructor(name) {
+        this.students = [];
         this.person = new Person(name);
         this.firstNumber = this.random();
         this.secondNumber = this.random();
@@ -48,7 +49,12 @@ class Manager {
         return Math.floor(Math.random() * 9);
     }
 
+    addStudent (name){
+        this.students.push(new Person(name));
+    }
+
     start() {
+        if(document.querySelector(".newUsers"))
         document.querySelector('.newUsers').addEventListener('click', this.letsGo.bind(this))
     }
 

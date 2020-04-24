@@ -3,8 +3,8 @@ class newUserInput {
         this.sectionOfInput = document.querySelector('.newUser');
         this.audio = document.querySelector('.audio');
         this.setElementsOfInput();
-        this.setMusicOfMainPage();
-    }
+        this.setMusicOfMainPage(); 
+    }      
 
     setElementsOfInput() {
         const elementsOfInput =
@@ -58,7 +58,25 @@ class GetQuiz {
         const name = document.querySelector('.newUsers').value;
         document.querySelector('.main').style.display = 'none';
         new Manager(name);
-        const button = `<input type="button" value="LET'S GO TO QUIZ">`
+        const button = `<input type="button" id="getQuiz" value="LET'S GO TO QUIZ">`
         this.quizSection.innerHTML += button;
+        this.fullscreen();
+    }
+
+    fullscreen(){
+        document.querySelector("#getQuiz").addEventListener('click', this.openFullscreen.bind(this));
+    }
+
+    openFullscreen() {
+        const elem = this.quizSection;
+        if (elem.requestFullscreen) {
+          elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+          elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+          elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+          elem.msRequestFullscreen();
+        }
     }
 }
