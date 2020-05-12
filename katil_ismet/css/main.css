@@ -1,0 +1,92 @@
+.main .cell1 { grid-area: header; }
+.main .cell2 { grid-area: left; min-height: 400px; display: flex; justify-content: center;}
+.main .cell3 { grid-area: main; min-height: 400px;}
+
+.main .grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header'
+        'left main main main main';
+    grid-gap: 20px;
+    background-color: darkslategray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.main .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.clean {
+    clear: both;
+}
+.main .cell1 {
+    font-family: cursive;
+    font-weight: bolder;
+    color: darkslategray;
+}
+
+.main .cell2{
+    display: block;
+}
+
+.main .cell2 .button-form {
+    position: relative;
+    text-align: right;
+    float: right;
+    margin-right: 5%;
+}
+
+.main .cell2 .button-form #get-form {
+    float: right;
+    background-color: darkslategray;
+    border: 0;
+    padding: 15%;
+    border-radius: 20px;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+.main .cell2 .button-form #get-form:hover{
+    transition: 0.8s;
+    opacity: 0.8;
+}
+
+.main .cell2 .form {
+    width: 60%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cell2 form input {
+    width: 95%;
+    height: 20%;
+    font-family: cursive;
+    font-weight: bolder;
+    text-align: center;
+    background-color: darkslategray;
+    border: 0;
+    border-radius: 20px;
+    color: white;
+}
+
+.cell2 #add {
+    height: 30%;
+    font-size: large;
+    cursor: pointer;
+}
+
+.cell2 #add:hover {
+    transition: 0.8s;
+    opacity: 0.8;
+}
+
