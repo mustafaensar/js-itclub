@@ -1,3 +1,6 @@
+/**
+ * Programin datalarini yonetir.
+ */
 class DBManager {
     constructor(appName){
         this.db = localStorage;
@@ -5,6 +8,9 @@ class DBManager {
         this.setInitialData();
     }
 
+    /**
+     * Baslangic datalarinin nasil olacagini gosterir.
+     */
     setInitialData(){
         const data = this.getItem(this.appName);
         if(!data){
@@ -49,6 +55,26 @@ class DBManager {
                                 info: 'Kanaryalar Caddesi No:5 Fatih Istanbul'
                             }
                         ]
+                    },
+                    {
+                        customer: 'Hero',
+                        targets: [
+                            {
+                                name: 'Nurcan',
+                                dead: false,
+                                info: 'Aslanlar Caddesi No:10 Bakirkoy Istanbul'
+                            },
+                            {
+                                name: 'Berkcan',
+                                dead: false,
+                                info: 'Kartallar Caddesi No:8 Avcilar Istanbul'
+                            },
+                            {
+                                name: 'Aycan',
+                                dead: true,
+                                info: 'Kanaryalar Caddesi No:5 Fatih Istanbul'
+                            }
+                        ]
                     }
                 ]
             };
@@ -57,11 +83,17 @@ class DBManager {
         }
     }
 
+    /**
+     * LocalStorage icerisine yeni bir kayit yapilmasini saglar.
+     */
     setItem(key, value){
         value = JSON.stringify(value);
         this.db.setItem(key, value);
     }
 
+    /**
+     * LocalStorage icerisindeki datayi cagirmamizi saglar.
+     */
     getItem(key){
         const data = this.db.getItem(key);
         return JSON.parse(data);

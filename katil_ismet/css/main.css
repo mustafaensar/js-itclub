@@ -56,7 +56,7 @@
 
 .main .cell2 .button-form #get-form:hover{
     transition: 0.8s;
-    opacity: 0.8;
+    background-color: black;
 }
 
 .main .cell2 .form {
@@ -87,6 +87,31 @@
 
 .cell2 #add:hover {
     transition: 0.8s;
-    opacity: 0.8;
+    background-color: black;
 }
 
+.cell2 .customer-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.cell2 .customer-list .customers {
+    width: 50%;
+    margin-top: 5%;
+    height: 20%;
+    font-family: cursive;
+    font-weight: bolder;
+    text-align: center;
+    background-color: darkslategray;
+    border: 0;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.cell2 .customer-list .customers:hover {
+    transition: 0.8s;
+    background-color: black;
+}
