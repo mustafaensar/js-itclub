@@ -6,7 +6,6 @@
     <title>Serial Killer</title>
     <link rel="shortcut icon" href="./images/icon.svg">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/targets.css">
 </head>
 <body>
 
@@ -15,36 +14,53 @@
         <div class="grid-container">
             <div class="cell1">WELCOME, WHO ARE WE KILLING TODAY</div>
             <div class="cell2">
-                <div class="button-form">
-                    <input type="button" id="get-form" value="+ Ekle">
+                <div class="form">
+                    <div id="customer-form">
+                        <input type="text" id="customer" placeholder="Customer">
+                        <input type="button" id="submitCustomer" value="+ Add">
+                    </div>
+                    <div id="victim-form">
+                        <input type="text" id="victim" placeholder="Victim">
+                        <input type="button" id="submitVictim" value="+ Add">
+                    </div>
+                    <div id="address-form">
+                        <input type="text" id="street" placeholder="Street">
+                        <input type="text" id="plz" placeholder="PLZ">
+                        <input type="text" id="ort" placeholder="ORT">
+                        <input type="button" id="submitAddress" value="+ Add">
+                    </div>
                 </div>
                 <div class="clean"></div>
-                <div class="form">
-                    <form action="Add A New Target">
-                        <input type="text" placeholder="Müsteri">
-                        <input type="button" id="add" value="EKLE">
-                    </form>
-                </div>
-                <div class="customer-list"></div>
             </div>
-            <div class="cell3"></div>
+            <div class="cell3">
+                <div class="customers">
+                    <ul class="customers-list"></ul>
+                </div>
+                <div class="victims-list"></div>
+                <div class="address-list"></div>
+            </div>
         </div>
         
     </section>
 
-    <section class="targets">
-        
-        <div class="grid-container">
-            <div class="cell1">WELCOME, WHO ARE WE KILLING TODAY ?</div>
-            <div class="cell2"></div>
-            <div class="cell3"></div>
-        </div>
+    <script src="./src/service/Database.js"></script>
+    
+    <script src="./src/model/Address.js"></script>
+    <script src="./src/model/Victim.js"></script>
+    <script src="./src/model/Customer.js"></script>
 
-    </section>
+    <script src="./src/view/lists/AddressList.js"></script>
+    <script src="./src/view/lists/VictimList.js"></script>
+    <script src="./src/view/lists/CustomerList.js"></script>
 
-    <script src="./src/view/CustomerView.js"></script>
-    <script src="./src/model/TargetsDB.js"></script>
-    <script src="./src/Manager.js"></script>
+    <script src="./src/view/form/AddressForm.js"></script>
+    <script src="./src/view/form/VictimForm.js"></script>
+    <script src="./src/view/form/CustomerForm.js"></script>
+
+    <script src="./src/view/controller/ViewController.js"></script>
+    <script src="./src/view/controller/ListController.js"></script>
+    <script src="./src/view/controller/MainController.js"></script>
+
     <script src="./src/app.js"></script>
 </body>
 </html>

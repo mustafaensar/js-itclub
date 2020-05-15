@@ -6,7 +6,7 @@
     display: grid;
     grid-template-areas:
         'header header header header header'
-        'left main main main main';
+        'left left main main main';
     grid-gap: 20px;
     background-color: darkslategray;
     padding: 20px;
@@ -21,6 +21,8 @@
     border-radius: 10px;
 }
 
+
+/*
 .clean {
     clear: both;
 }
@@ -34,14 +36,14 @@
     display: block;
 }
 
-.main .cell2 .button-form {
+.button-form {
     position: relative;
     text-align: right;
     float: right;
-    margin-right: 5%;
+    margin-right: 10px;
 }
 
-.main .cell2 .button-form #get-form {
+.button-form #get-customers-form, #get-targets-form {
     float: right;
     background-color: darkslategray;
     border: 0;
@@ -54,7 +56,7 @@
     font-weight: bolder;
 }
 
-.main .cell2 .button-form #get-form:hover{
+.button-form #get-form:hover{
     transition: 0.8s;
     background-color: black;
 }

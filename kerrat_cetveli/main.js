@@ -9,7 +9,6 @@ class newUserInput {
             `<input type="text" placeholder="Write Your Name" id="newUserInput"><input type="button" value="Submit" id="newUserButton">`;
         this.sectionOfInput.innerHTML = elementsOfInput;
     }
-
 }
 
 class Informations {

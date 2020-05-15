@@ -2,9 +2,9 @@
  * 
  * --- PROGRAM AKISI ---
  * >> Kullanici sisteme girdiginde karsisinda kendisine isverenlerin listesi ve
- * >> yeni müsteri ve hedefleri girebilecegi bir form blogu da olacak.
- * >> Kullanici isverenlerin herhangi birisinin ismine tikladigi zaman hedeflerini liste halinde görebilecek.
- * >> Isi bitirilen hedefler diger hedeflerden daha saydam görünecek.
+ * >> yeni isveren ve hedefleri girebilecegi bir form blogu da olacak.
+ * >> Kullanici isverenlerin herhangi birisinin ismine tikladigi zaman maktulleri liste halinde görebilecek.
+ * >> Isi bitirilen maktuller diger hedeflerden daha saydam görünecek.
  * 
  * 
  * --- ANALIZ KISMI ---
@@ -19,5 +19,38 @@
  * 
  */
 
- 
- 
+class Manager{
+    constructor(){
+        this.appName = 'katil-ismet'
+        this.db = new Database(this.appName);
+    }
+}
+manager = new Manager();
+
+new MainController();
+new ListController();
+
+const ahmetCustomer = new Customer('ahmet');
+const cemilCustomer = new Customer('cemil');
+const aliVictim = new Victim('ali');
+const veliVictim = new Victim('veli');
+const aliAddressEv = new Address('Baadenerstrasse 36', '8005', 'Zurich');
+const aliAddressIs = new Address('Juchstrasse 38', '8009', 'Luzern');
+const veliAddressEv = new Address('Seestrasse 36', '8007', 'Basel');
+const veliAddressIs = new Address('Bahnofstrasse 30', '8005', 'Zurich');
+
+aliVictim.addAddress(aliAddressEv);
+aliVictim.addAddress(aliAddressIs);
+veliVictim.addAddress(veliAddressEv);
+veliVictim.addAddress(veliAddressIs);
+
+ahmetCustomer.addVictim(aliVictim);
+ahmetCustomer.addVictim(veliVictim);
+
+const ahmetVictims = ahmetCustomer.victims
+
+console.log(ahmetCustomer);
+
+new ViewController(new CustomerForm);
+new ViewController(new VictimForm);
+new ViewController(new AddressForm);
