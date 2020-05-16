@@ -2,7 +2,6 @@ class CustomerForm{
     display = true
     constructor(){
         this.customerInput = document.querySelector('#customer');
-        
         this.section = document.querySelector('#customer-form');
     }
 

@@ -49,8 +49,6 @@ ahmetCustomer.addVictim(veliVictim);
 
 const ahmetVictims = ahmetCustomer.victims
 
-console.log(ahmetCustomer);
-
 new ViewController(new CustomerForm);
 new ViewController(new VictimForm);
 new ViewController(new AddressForm);

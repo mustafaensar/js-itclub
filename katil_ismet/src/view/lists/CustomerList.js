@@ -3,13 +3,12 @@
  */
 class CustomerList{
     constructor(){
-        this.appName = new Database().appName;
+        this.appName = new Manager().appName
         this.getCustomers();
-        console.log(this.getCustomers());
-                
     }
 
-    getCustomers(){
-        new Database().getItem(this.appName);
+    getCustomers(pCustomer){
+        let customer = new Database(this.appName).getItem(pCustomer);
+        return customer;
     }
 }

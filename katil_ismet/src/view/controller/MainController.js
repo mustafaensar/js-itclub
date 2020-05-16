@@ -1,6 +1,6 @@
 class MainController{
     constructor(){
-        this.appName = 'katil-ismet'
+        this.appName = new Manager().appName
         this.db = new Database(this.appName);
         this.customer = null;
         this.victim = null;
