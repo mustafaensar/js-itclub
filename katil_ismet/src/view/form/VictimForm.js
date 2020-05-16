@@ -1,12 +1,12 @@
 class VictimForm{
-    display = true
-    constructor(){
+    constructor(pDisplay){
+        this.display = pDisplay;
         this.victimInput = document.querySelector('#victim');
         this.section = document.querySelector('#victim-form');
     }
 
     /**
-     * Maktullerin html formu uzerinden alinmasini saglar.
+     * Maktullerin HTML icerisindeki bir form uzerinden alinmasini saglar.
      */
     getVictim(){
         return new Victim(this.victimInput.value)

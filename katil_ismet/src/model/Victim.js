@@ -8,7 +8,7 @@ class Victim{
     }
 
     /**
-     * Adresleri array'e gonderir.
+     * Adresleri, maktullerin icinde bir diziye gonderir.
      */
     addAddress(pAddress){
         this.addresses.push(pAddress);

@@ -33,10 +33,7 @@ class Database {
         this.setItem(this.appName, list);
     }
 
-    deleteCustomer(pCustomer){
-        let list = this.getItem(this.appName) || [];
-        list = list.filter(customer => customer.name !== pCustomer.name);
-        list.push(pCustomer);
-        this.setItem(this.appName, list);
-    }
+    /**
+     * DELETE YAPMAK ICIN deleteCustomer METODU EKLENECEK. (ZAMANIM YETMEDI :( )
+     */
 }

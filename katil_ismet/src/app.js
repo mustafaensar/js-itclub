@@ -19,36 +19,24 @@
  * 
  */
 
+
 class Manager{
     constructor(){
         this.appName = 'katil-ismet'
         this.db = new Database(this.appName);
     }
 }
-manager = new Manager();
+const manager = new Manager();
 
 new MainController();
-new ListController();
 
-const ahmetCustomer = new Customer('ahmet');
-const cemilCustomer = new Customer('cemil');
-const aliVictim = new Victim('ali');
-const veliVictim = new Victim('veli');
-const aliAddressEv = new Address('Baadenerstrasse 36', '8005', 'Zurich');
-const aliAddressIs = new Address('Juchstrasse 38', '8009', 'Luzern');
-const veliAddressEv = new Address('Seestrasse 36', '8007', 'Basel');
-const veliAddressIs = new Address('Bahnofstrasse 30', '8005', 'Zurich');
+new ViewController(new CustomerForm(true));
+new ViewController(new VictimForm(false));
+new ViewController(new AddressForm(false));
+new ViewController(new CustomerListView(true));
+new ViewController(new VictimListView(false));
+new ViewController(new AddressListView(false));
 
-aliVictim.addAddress(aliAddressEv);
-aliVictim.addAddress(aliAddressIs);
-veliVictim.addAddress(veliAddressEv);
-veliVictim.addAddress(veliAddressIs);
-
-ahmetCustomer.addVictim(aliVictim);
-ahmetCustomer.addVictim(veliVictim);
-
-const ahmetVictims = ahmetCustomer.victims
-
-new ViewController(new CustomerForm);
-new ViewController(new VictimForm);
-new ViewController(new AddressForm);
+new CustomerList();
+new VictimList();
+new AddressList();

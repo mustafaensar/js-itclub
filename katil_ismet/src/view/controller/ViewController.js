@@ -1,30 +1,30 @@
 /**
- * Elemanlarin gorunumunu duzenler.
+ * Elemanlarin gorunumunu boolean degerine gore duzenler.
  */
 class ViewController{
-    constructor(form){
-        this.form = form;
+    constructor(element){
+        this.element = element;
         this.display();
     }
 
     /**
-     * Gelen elemanin boolean degerine gore gorunumunu ayarlayan metodu cagirir.
+     * Gelen elemanin boolean degerine gore goruntu durumunu ayarlayan metodu cagirir.
      */
     display(){
-        this.form.display ? this.show() : this.hide();
+        this.element.display ? this.show() : this.hide();
     }
 
     /**
-     * Elemanin gosterilmesini saglar.
+     * Eleman true ise gosterilmesini saglar.
      */
     show(){
-        this.form.section.style.display = '';
+        this.element.section.style.display = '';
     }
 
     /**
-     * Elemanin gizlenmesini saglar.
+     * Eleman false ise gizlenmesini saglar.
      */
     hide(){
-        this.form.section.style.display = 'none';
+        this.element.section.style.display = 'none';
     }
 }

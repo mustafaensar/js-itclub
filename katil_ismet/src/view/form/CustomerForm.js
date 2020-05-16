@@ -1,12 +1,12 @@
 class CustomerForm{
-    display = true
-    constructor(){
+    constructor(pDisplay){
+        this.display = pDisplay;
         this.customerInput = document.querySelector('#customer');
         this.section = document.querySelector('#customer-form');
     }
 
     /**
-     * Musterilerin html formu uzerinden alinmasini saglar.
+     * Musterilerin HTML icerisindeki bir form uzerinden alinmasini saglar.
      */
     getCustomer(){
         return new Customer(this.customerInput.value)

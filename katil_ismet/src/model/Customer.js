@@ -9,7 +9,7 @@ class Customer{
     }
 
     /**
-     * Maktulleri array'e gonderir.
+     * Maktulleri, musterilerin icinde bir diziye gonderir.
      */
     addVictim(pVictim){
         this.victims.push(pVictim);

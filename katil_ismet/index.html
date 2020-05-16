@@ -17,32 +17,36 @@
                 <div class="form">
                     <div id="customer-form">
                         <input type="text" id="customer" placeholder="Customer">
-                        <input type="button" id="submitCustomer" value="+ Add">
+                        <input type="button" class="button-form" id="submitCustomer" value="+ Add">
                     </div>
                     <div id="victim-form">
                         <input type="text" id="victim" placeholder="Victim">
-                        <input type="button" id="submitVictim" value="+ Add">
+                        <input type="button" class="button-form" id="submitVictim" value="+ Add">
                     </div>
                     <div id="address-form">
                         <input type="text" id="street" placeholder="Street">
                         <input type="text" id="plz" placeholder="PLZ">
                         <input type="text" id="ort" placeholder="ORT">
-                        <input type="button" id="submitAddress" value="+ Add">
+                        <input type="button" class="button-form" id="submitAddress" value="+ Add">
                     </div>
                 </div>
-                <div class="clean"></div>
             </div>
             <div class="cell3">
                 <div class="customers">
                     <ul class="customers-list"></ul>
                 </div>
-                <div class="victims-list"></div>
-                <div class="address-list"></div>
+                <div class="victims">
+                    <ul class="victims-list"></ul>
+                </div>
+                <div class="addresses">
+                    <ul class="addresses-list"></ul>
+                </div>
             </div>
         </div>
         
     </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src="./src/service/Database.js"></script>
     
     <script src="./src/model/Address.js"></script>
@@ -58,7 +62,6 @@
     <script src="./src/view/form/CustomerForm.js"></script>
 
     <script src="./src/view/controller/ViewController.js"></script>
-    <script src="./src/view/controller/ListController.js"></script>
     <script src="./src/view/controller/MainController.js"></script>
 
     <script src="./src/app.js"></script>
