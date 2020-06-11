@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>hicoders - React</title>
+    <script src='https://unpkg.com/react@16/umd/react.development.js' crossorigin></script>
+    <script src='https://unpkg.com/react-dom@16/umd/react-dom.development.js' crossorigin></script>
+    <script src='https://unpkg.com/babel-standalone@6/babel.min.js'></script>
+    
+</head>
+<body>
+
+    <div id='root'></div>
+
+    <script type='text/babel'>
+
+    class MyForm extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+        name: '',
+        surname: '',
+        birthday: null,
+        };
+    }
+
+    myChangeHandler = (event) => {
+        let nam = event.target.name;
+        let val = event.target.value;
+        this.setState({[nam]: val});
+    }
+
+    render() {
+        return (
+            <form>
+            <h3>Your Name : {this.state.name} <br/> Your Surname : {this.state.surname} <br/> Your Birthday : {this.state.birthday}</h3>
+            <label>Enter Your Name : <br/>
+            <input type='text' name='name' onChange={this.myChangeHandler} />
+            </label>
+            <br/>
+            <br/>
+            <label>Enter Your Surname : <br/>
+            <input type='text' name='surname' onChange={this.myChangeHandler} />
+            </label>
+            <br/>
+            <br/>
+            <label>Enter Your Birthday : <br/>
+            <input type='date' name='birthday' onChange={this.myChangeHandler} />
+            </label>
+            <br/>
+            <br/>
+            <input type='submit' value='Submit'/>
+            </form>
+            );
+    }
+    }
+
+    ReactDOM.render(
+    <MyForm />,
+    document.getElementById('root')
+    );
+
+    </script>
+    
+</body>
+</html>
